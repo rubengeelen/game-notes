@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruben Geelen - Reflections</title>
+    <title>Your Name - Reflections</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 600px;
+            display: flex;
+            max-width: 900px;
             margin: 40px auto;
+        }
+        nav {
+            width: 200px;
             padding: 20px;
-            line-height: 1.6;
+            background: #f4f4f4;
+            height: 100vh;
+            position: fixed;
         }
-        h1, h2 {
-            text-align: center;
-        }
-        a {
-            color: blue;
+        nav a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: black;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        nav a:hover {
+            background: #ddd;
+        }
+        .content {
+            margin-left: 220px; /* Make space for the sidebar */
+            padding: 20px;
+            flex: 1;
         }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <h2>Reflections</h2>
-    <p>Welcome to my collection of thoughts and reflections.</p>
-    
-    <h3>Recent Posts</h3>
-    <ul>
-        <li><a href="post1.html">Example Reflection Post</a></li>
-    </ul>
+
+    <!-- Sidebar Navigation -->
+    <nav>
+        <h2>Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="entries.html">Entries</a>
+        <a href="bio.html">Bio</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Your Name</h1>
+        <h2>Reflections</h2>
+        <p>Welcome to my collection of thoughts and reflections.</p>
+
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="post1.html">Example Reflection Post</a></li>
+        </ul>
+    </div>
+
 </body>
 </html>
