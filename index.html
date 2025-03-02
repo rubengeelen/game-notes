@@ -5,100 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Reflections</title>
     <style>
-        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
+            display: flex;
             margin: 0;
-            padding: 0;
-            display: flex;
-            height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
             background-color: #f4f4f4;
-            color: #333;
-        }
-
-        /* Left Navigation */
-        nav {
-            width: 25%;
-            background-color: #333;
-            color: white;
             padding: 20px;
-            box-sizing: border-box;
             height: 100vh;
-            display: flex;
-            flex-direction: column;
+            position: fixed;
         }
-
-        nav a {
-            font-size: 14px;
-            color: white;
+        .sidebar a {
+            display: block;
+            padding: 10px;
             text-decoration: none;
-            margin: 10px 0;
-            padding: 8px 0;
-            text-align: center;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
+            color: black;
         }
-
-        nav a:hover {
-            background-color: #575757;
+        .sidebar a:hover {
+            background-color: #ddd;
         }
-
-        /* Main Content */
         .content {
-            width: 75%;
+            margin-left: 220px;
             padding: 20px;
-            box-sizing: border-box;
-            background-color: white;
-            height: 100vh;
-            overflow-y: auto;
+            flex-grow: 1;
         }
-
-        .content h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .content h2 {
-            font-size: 20px;
-            margin-top: 40px;
-        }
-
-        .content ul {
-            padding-left: 0;
-            list-style-type: none;
-        }
-
-        .content li {
-            margin-bottom: 8px;
-        }
-
-        .content li a {
-            text-decoration: none;
-            color: #0066cc;
-            font-size: 14px;
-        }
-
-        .content li a:hover {
-            text-decoration: underline;
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Sidebar Navigation -->
-    <nav>
+    <div class="sidebar">
+        <h2>Menu</h2>
         <a href="index.html">Home</a>
         <a href="entries.html">Entries</a>
         <a href="bio.html">Bio</a>
-    </nav>
+    </div>
 
-    <!-- Main Content -->
     <div class="content">
-        <h1>Welcome to My Reflections</h1>
-        <p>Welcome to my collection of thoughts and reflections. This website is where I share my personal insights, experiences, and refle
+        <h1>Your Name</h1>
+        <h2>Reflections</h2>
+        <p>Welcome to my collection of thoughts and reflections.</p>
+
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="post1.html">Example Reflection Post</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
