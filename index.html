@@ -7,7 +7,7 @@
     <style>
         /* Global Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fafafa;
@@ -27,7 +27,7 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
 
         nav h2 {
@@ -75,4 +75,39 @@
 
         ul {
             list-style-type: none;
-            padding:
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        ul li a {
+            color: #0066cc;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav>
+        <h2>Your Name</h2>
+        <a href="index.html">Home</a>
+        <a href="entries.html">Entries</a>
+        <a href="bio.html">Bio</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Welcome to My Reflections</h1>
+        <p>Welcome to my collection of thoughts and reflections. This website is where I share my personal insights, experiences, and reflections on various aspects of life. Feel free to explore and read through my recent posts.</p>
+
+        <h3>Recent Posts</h3>
+        <ul>
+    
