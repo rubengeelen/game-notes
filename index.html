@@ -7,107 +7,92 @@
     <style>
         /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #fafafa;
-            color: #333;
             display: flex;
-            height: 100vh;
-            overflow: hidden;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
         }
 
-        /* Sidebar Styles */
-        nav {
-            width: 250px;
-            background-color: #333;
-            color: white;
+        /* Wrapper */
+        .wrapper {
+            width: 100%;
+            max-width: 1000px;
             padding: 20px;
-            position: fixed;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            background-color: white;
         }
 
-        nav h2 {
-            font-size: 24px;
+        /* Title */
+        h1 {
+            font-size: 40px;
+            color: #222;
             margin-bottom: 20px;
         }
 
+        /* Navigation */
+        nav {
+            margin-bottom: 40px;
+        }
+
         nav a {
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
             font-size: 18px;
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 20px;
         }
 
         nav a:hover {
-            background-color: #575757;
+            text-decoration: underline;
         }
 
-        /* Main Content Area */
+        /* Main Content */
         .content {
-            margin-left: 270px; /* Make space for the sidebar */
-            padding: 20px;
-            flex-grow: 1;
-            overflow-y: auto;
-        }
-
-        .content h1 {
-            font-size: 36px;
-            color: #222;
-        }
-
-        .content p {
+            line-height: 1.7;
             font-size: 18px;
-            line-height: 1.6;
-            color: #555;
         }
 
-        .content h3 {
+        .content h2 {
             font-size: 28px;
             color: #444;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
-        ul {
+        .content ul {
             list-style-type: none;
             padding: 0;
         }
 
-        ul li {
-            margin-bottom: 15px;
+        .content li {
+            margin-bottom: 10px;
         }
 
-        ul li a {
-            color: #0066cc;
-            font-size: 20px;
+        .content li a {
             text-decoration: none;
+            color: #0066cc;
         }
 
-        ul li a:hover {
+        .content li a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 <body>
 
-    <!-- Sidebar Navigation -->
-    <nav>
-        <h2>Your Name</h2>
-        <a href="index.html">Home</a>
-        <a href="entries.html">Entries</a>
-        <a href="bio.html">Bio</a>
-    </nav>
+    <div class="wrapper">
 
-    <!-- Main Content -->
-    <div class="content">
-        <h1>Welcome to My Reflections</h1>
-        <p>Welcome to my collection of thoughts and reflections. This website is where I share my personal insights, experiences, and reflections on various aspects of life. Feel free to explore and read through my recent posts.</p>
+        <!-- Sidebar Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="entries.html">Entries</a>
+            <a href="bio.html">Bio</a>
+        </nav>
 
-        <h3>Recent Posts</h3>
-        <ul>
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Welcome to My Reflections</h1>
     
