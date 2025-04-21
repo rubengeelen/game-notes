@@ -1,47 +1,36 @@
-/* Global Styles */
+/* Global Styles - Paul Graham inspired */
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    font-family: serif; /* Browser default serif font like Times New Roman */
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
 }
 
-.sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
+h1, h2, h3 {
+    color: #993333; /* Classic reddish heading color */
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-.sidebar h2 {
-    text-align: center;
+a {
+    color: #0000EE;
+    text-decoration: underline;
 }
 
-.sidebar a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.sidebar a:hover {
-    background-color: #ddd;
-}
-
-.content {
-    margin-left: 220px;
-    padding: 20px;
-    flex-grow: 1;
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+ul {
+    list-style-type: square;
+    padding-left: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 p {
-    font-size: 1.1em;
-    line-height: 1.6;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
